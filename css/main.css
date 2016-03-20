@@ -168,7 +168,8 @@ ul.nostyle i {
 }
 @media only screen and (min-width: 768px) {
   #main-menu.navbar-default {
-    background: rgba(255, 255, 255, 0.9);
+    /* background: rgba(255, 255, 255, 0.9);*/
+    background: white;
     -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
   }
@@ -947,11 +948,11 @@ ul.nostyle i {
   
 }
 
-#history .section-header{
+/*#history .section-header{
   margin-left: auto;
   margin-right: auto;
-  width: 700px;
-}
+  width: 70%;
+}*/
 
 /* que pour le texte du bloc HISTOIRE */
 #history .section-header p{
