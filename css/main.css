@@ -936,3 +936,24 @@ ul.nostyle i {
   box-shadow: none;
   -webkit-box-shadow: none;
 }
+
+.slider-inner .container{
+  margin-top: -160px;
+  margin-left: 48%;
+}
+
+#history{
+  margin-top: 30px;
+  
+}
+
+#history .section-header{
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+}
+
+/* que pour le texte du bloc HISTOIRE */
+#history .section-header p{
+  text-align: left;
+}
