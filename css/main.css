@@ -988,3 +988,23 @@ ul.nostyle i {
 {
   top:30px;
 }
+
+.smallArticle
+{
+  width:300px;
+}
+
+.articleImg
+{
+  height:320px !important;
+}
+
+.textContainer
+{
+  padding:30px 10px;
+}
+
+.article img
+{
+    height:220px !important;
+}
