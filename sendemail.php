@@ -1,16 +1,28 @@
 <?php
-$name       = @trim(stripslashes($_POST['name'])); 
-$from       = @trim(stripslashes($_POST['email'])); 
-$subject    = @trim(stripslashes($_POST['subject'])); 
-$message    = @trim(stripslashes($_POST['message'])); 
-$to   		= 'karami.pro@gmail.com';
- 
-$headers = 'From: '.$name.' <'.$from.'>'. "\r\n" .
-		   'Reply-To: <'.$from.'>'. "\r\n" .
-		   'Subject: '.$subject. "\r\n" .
-		   'X-Mailer: PHP/' . phpversion();
 
-mail($to, $subject, $message, $headers);
+if (isset($_POST) && isset($_POST['nom']) && isset($_POST['email']) && isset($_POST['subject']) && isset($_POST['message']) ) {extract($_POST);
+$date = date("d-m-Y");
+$heure = date("H:i");
 
-die;
- ?>
+if (!empty($nom) && !empty($email) && !empty($message) ) {
+	$message=str_replace("\'", "'", $message);
+	$destinataire="karami.pro@gmail.com";
+	$sujet="Formulaire de contact - www.voyageauboutdela11.fr";
+	$message="Un nouveau message est arrivé à $heure le $date : \n
+	Nom : $nom \n
+	Email : $email \n
+	Objet : $rappel \n
+	Message : $message";
+
+			$entete="From: $nom \n Répondre à  : $email";
+			mail($destinataire, $sujet, $message, $entete);
+		  
+		}
+
+		else {
+			echo "Vous n'avez pas rempli tous les champs";
+		}
+
+}
+
+?>
