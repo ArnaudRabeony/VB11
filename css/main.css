@@ -1022,3 +1022,9 @@ ul.nostyle i {
 {
    background: rgb(234, 234, 234);
 }
+
+/* centre le contenu histoire */
+/*
+.tab-content > div{
+  text-align:center;
+}*/
