@@ -1,4 +1,6 @@
 <?php
+ini_set("SMTP", "smtp.voyageauboutdela11.fr");
+
 $name       = @trim(stripslashes($_POST['name'])); 
 $from       = @trim(stripslashes($_POST['email'])); 
 $subject    = @trim(stripslashes($_POST['subject'])); 
