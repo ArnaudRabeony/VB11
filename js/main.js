@@ -193,22 +193,6 @@ jQuery(function($) {'use strict';
 	});
 
 	// Contact form
-	/* original à gardé*/
-	// var form = $('#main-contact-form');
-	// form.submit(function(event){
-	// 	event.preventDefault();
-	// 	var form_status = $('<div class="form_status"></div>');
-	// 	$.ajax({
-	// 		url: $(this).attr('action'),
-	// 		beforeSend: function(){
-	// 			form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Envoi...</p>').fadeIn() );
-	// 		}
-	// 	}).done(function(data){
-	// 		form_status.html('<p class="text-success">Merci. Nous vous recontacterons au plus vite</p>').delay(3000).fadeOut();
-	// 	});
-	// });
-
-
 	var form = $('#main-contact-form');
 	form.submit(function(event){
 		event.preventDefault();
