@@ -6,7 +6,7 @@ $name       = @trim(stripslashes($_POST['name']));
 $from       = @trim(stripslashes($_POST['email'])); 
 $subject    = @trim(stripslashes($_POST['subject'])); 
 $message    = @trim(stripslashes($_POST['message'])); 
-$to   		= 'karami.pro@gmail.com';
+$to   		= 'voyageauboutdela11@gmail.com';
  
 $headers = 'From: '.$name.' <'.$from.'>'. "\r\n" .
 		   'Reply-To: <'.$from.'>'. "\r\n" .
@@ -14,9 +14,6 @@ $headers = 'From: '.$name.' <'.$from.'>'. "\r\n" .
 		   'X-Mailer: PHP/' . phpversion();
 
 mail($to, $subject, $message, $headers);
-
-die;
-
 
 die;
 
